@@ -1,7 +1,5 @@
-/* ===== IMPORTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
 
-/* ===== CSS VARIABLES ===== */
 :root {
   --bg-primary: #070d1a;
   --bg-secondary: #0d1627;
@@ -26,7 +24,6 @@
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -45,7 +42,6 @@ body {
   max-width: 100vw;
 }
 
-/* Background grid texture */
 body::before {
   content: '';
   position: fixed;
@@ -70,12 +66,10 @@ img { display: block; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 
-/* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--accent-dim); border-radius: 99px; }
 
-/* ===== HEADER / NAV ===== */
 header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -187,7 +181,6 @@ nav {
 
 .mobile-menu a:hover { color: var(--accent-bright); }
 
-/* ===== BUTTONS ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -227,7 +220,6 @@ nav {
   transform: translateY(-2px);
 }
 
-/* ===== SECTION HEADERS ===== */
 .section-label {
   display: inline-flex;
   align-items: center;
@@ -266,7 +258,6 @@ nav {
 
 .section-header { margin-bottom: 56px; }
 
-/* ===== HERO SECTION ===== */
 #hero {
   min-height: 100vh;
   display: flex;
@@ -277,7 +268,6 @@ nav {
   overflow: hidden;
 }
 
-/* Glow orbs */
 #hero::before {
   content: '';
   position: absolute;
@@ -372,7 +362,6 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Hero image */
 .hero-image-wrap {
   position: relative;
   display: flex;
@@ -421,7 +410,6 @@ nav {
 
 .hero-image-wrap:hover .hero-image-inner img { transform: scale(1.03); }
 
-/* Floating tags */
 .hero-float-tag {
   position: absolute;
   background: var(--bg-card);
@@ -448,7 +436,6 @@ nav {
 .tag-available { bottom: 32px; left: -24px; }
 .tag-exp { top: 32px; right: -24px; }
 
-/* ===== ABOUT SECTION ===== */
 #about {
   padding: 100px 0;
   background: var(--bg-secondary);
@@ -517,7 +504,6 @@ nav {
   font-weight: 500;
 }
 
-/* ===== SKILLS SECTION ===== */
 #skills {
   padding: 100px 0;
 }
@@ -600,7 +586,6 @@ nav {
   color: var(--accent-bright);
 }
 
-/* ===== CONTACT SECTION ===== */
 #contact {
   padding: 100px 0;
   background: var(--bg-secondary);
@@ -683,7 +668,6 @@ nav {
   transform: translate(3px, -3px);
 }
 
-/* ===== CTA SECTION ===== */
 #cta {
   padding: 100px 0;
   text-align: center;
@@ -724,7 +708,6 @@ nav {
   margin-bottom: 36px;
 }
 
-/* ===== FOOTER ===== */
 footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
@@ -760,7 +743,6 @@ footer {
 
 .footer-links a:hover { color: var(--accent-bright); }
 
-/* ===== BACK TO TOP ===== */
 #back-to-top {
   position: fixed;
   bottom: 32px;
@@ -794,7 +776,6 @@ footer {
   transform: translateY(-3px);
 }
 
-/* ===== PROJECTS PAGE ===== */
 .projects-hero {
   padding: 140px 0 60px;
   text-align: center;
@@ -814,7 +795,6 @@ footer {
   gap: 24px;
 }
 
-/* ===== PROJECT CARD ===== */
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -898,7 +878,6 @@ footer {
   transform: rotate(180deg);
 }
 
-/* Card body / expanded content */
 .card-body {
   max-height: 0;
   overflow: hidden;
@@ -986,7 +965,6 @@ footer {
   justify-content: flex-end;
 }
 
-/* ===== FADE IN ANIMATION ===== */
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
@@ -1003,7 +981,6 @@ footer {
 .fade-in-delay-3 { transition-delay: 0.3s; }
 .fade-in-delay-4 { transition-delay: 0.4s; }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr 340px;
@@ -1024,7 +1001,6 @@ footer {
     gap: 40px;
   }
 
-  /* Image first on mobile */
   .hero-image-wrap { order: -1; }
 
   .hero-intro {

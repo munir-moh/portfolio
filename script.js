@@ -1,6 +1,3 @@
-/* ===== SCRIPT.JS ===== */
-
-// ── Header scroll effect ──────────────────────────────────────────
 const header = document.querySelector('header');
 if (header) {
   window.addEventListener('scroll', () => {
@@ -8,7 +5,6 @@ if (header) {
   });
 }
 
-// ── Hamburger / mobile menu ───────────────────────────────────────
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -18,7 +14,6 @@ if (hamburger && mobileMenu) {
     mobileMenu.classList.toggle('open');
   });
 
-  // Close on link click
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
@@ -27,7 +22,6 @@ if (hamburger && mobileMenu) {
   });
 }
 
-// ── Active nav link ───────────────────────────────────────────────
 (function setActiveNav() {
   const current = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
@@ -38,7 +32,6 @@ if (hamburger && mobileMenu) {
   });
 })();
 
-// ── Fade-in on scroll ─────────────────────────────────────────────
 const fadeEls = document.querySelectorAll('.fade-in');
 
 if (fadeEls.length) {
@@ -54,7 +47,6 @@ if (fadeEls.length) {
   fadeEls.forEach(el => observer.observe(el));
 }
 
-// ── Back to top ───────────────────────────────────────────────────
 const backToTop = document.getElementById('back-to-top');
 
 if (backToTop) {
@@ -67,7 +59,6 @@ if (backToTop) {
   });
 }
 
-// ── Project card accordion ────────────────────────────────────────
 const projectCards = document.querySelectorAll('.project-card');
 
 if (projectCards.length) {
@@ -81,19 +72,16 @@ if (projectCards.length) {
     header.addEventListener('click', () => {
       const isActive = card.classList.contains('active');
 
-      // Close all cards first
       projectCards.forEach(c => {
         c.classList.remove('active');
         const b = c.querySelector('.card-body');
         if (b) b.style.maxHeight = '0';
       });
 
-      // Open clicked card if it wasn't already open
       if (!isActive) {
         card.classList.add('active');
         body.style.maxHeight = inner.scrollHeight + 'px';
 
-        // Scroll card into view
         setTimeout(() => {
           card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }, 100);
@@ -102,7 +90,6 @@ if (projectCards.length) {
   });
 }
 
-// ── Smooth scroll for anchor links ───────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
