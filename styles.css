@@ -224,20 +224,12 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.78rem;
+  font-size: 1 rem;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 12px;
-}
-
-.section-label::before {
-  content: '';
-  display: block;
-  width: 20px; height: 2px;
-  background: var(--accent);
-  border-radius: 99px;
 }
 
 .section-title {
@@ -426,15 +418,6 @@ nav {
   z-index: 10;
   box-shadow: var(--shadow);
 }
-
-.hero-float-tag .dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: #22c55e;
-}
-
-.tag-available { bottom: 32px; left: -24px; }
-.tag-exp { top: 32px; right: -24px; }
 
 #about {
   padding: 100px 0;
