@@ -44,7 +44,7 @@
       <div class="section-label">My Work</div>
       <h1 class="section-title">Projects</h1>
       <p class="section-subtitle">
-        Click any card to see the full breakdown — problem, solution, tech stack, and challenges faced.
+        Click any card to see the full breakdown: problem, solution, tech stack, and challenges faced.
       </p>
     </div>
   </section>
@@ -91,7 +91,7 @@
                   <span class="tech-tag">Python</span>
                   <span class="tech-tag">Flask</span>
                   <span class="tech-tag">OpenAI SDK</span>
-                  <span class="tech-tag">SQLite</span>
+                  <span class="tech-tag">PostgreSQL</span>
                   <span class="tech-tag">SQLAlchemy</span>
                 </div>
               </div>
@@ -100,7 +100,7 @@
                 <div class="card-section-title">Challenges Faced</div>
                 <ul>
                   <li>Implementing the payment system</li>
-                  <li>The challenge was tackled by integrating a manual payment solution (with reference number for admin to validate payments) while maintaining a good user experience.</li>
+                  <li>The challenge was tackled by integrating a payment gateway, while maintaining a good user experience.</li>
                 </ul>
               </div>
 
@@ -169,11 +169,77 @@
             </div>
           </div>
         </div>
+
+        <div class="project-card fade-in">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-num">03</span>
+              <div>
+                <div class="card-title">Football Booking System Agent (Frontend & Backend)</div>
+                <div class="card-summary">An AI-powered conversational agent that allows users to check football pitch availability, make bookings, and verify payments through a chat interface integrated with an existing football booking system.</div>
+              </div>
+            </div>
+            <div class="card-chevron">▼</div>
+          </div>
+          <div class="card-body">
+            <div class="card-body-inner">
+
+              <div class="card-section">
+                <div class="card-section-title">Problem</div>
+                <ul>
+                  <li>Users needed a more conversational and convenient way to check availability and initiate bookings.</li>
+                  <li>Booking required users to provide their personal details, making it useful to have a system that could securely save and reuse their information.</li>
+                </ul>
+              </div>
+
+              <div class="card-section">
+                <div class="card-section-title">Solution</div>
+                <p>
+                    I developed a conversational booking agent that integrates with my existing Football Booking System. Users can register, log in, check pitch availability, and initiate bookings through natural language conversations. The agent retrieves their saved details, 
+                    connects to the existing backend to process bookings, and verifies payment status through Paystack integration. This provides an alternative, chat-based way to interact with the original booking system.
+                </p>
+              </div>
+
+              <div class="card-section">
+                <div class="card-section-title">Tech Stack</div>
+                <div class="tech-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Vite</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Supabase PostgreSQL</span>
+              </div>
+
+              <div class="card-section">
+                <div class="card-section-title">Challenges Faced</div>
+                <ul>
+                  <li>Integrating the agent with the existing booking backend without directly accessing its database.</li>
+                  <li>Managing conversational booking requests, including extracting dates, times, and booking durations from user messages.</li>
+                  <li>Implementing secure user authentication and linking booking references to the correct accounts.</li>
+                  <li>Handling payment verification and ensuring users complete payments through the official Paystack checkout page.</li>
+                  <li>Managing communication between the frontend, agent API, existing backend, and database.</li>
+                </ul>
+              </div>
+              
+              <div class="card-footer">
+                <a href="https://github.com/munir-moh/football-booking-agent" target="_blank" rel="noopener" class="btn btn-primary">
+                  View Code &rarr;
+                </a>
+              </div>
+              <div class="card-footer">
+                <a href=" https://football-booking-agent.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">
+                  View Live Site &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         
         <div class="project-card fade-in fade-in-delay-2">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">03</span>
+              <span class="card-num">04</span>
               <div>
                 <div class="card-title">Barbing Booking System (Backend)</div>
                 <div class="card-summary">A simple app for booking and managing barbing appointments with a clean, intuitive interface.</div>
@@ -230,7 +296,7 @@
         <div class="project-card fade-in fade-in-delay-3">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">04</span>
+              <span class="card-num">05</span>
               <div>
                 <div class="card-title">WasteWise Nigeria (Backend)</div>
                 <div class="card-summary">A community-driven platform for sustainable waste management.</div>
@@ -284,7 +350,7 @@
         <div class="project-card fade-in">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">05</span>
+              <span class="card-num">06</span>
               <div>
                 <div class="card-title">School Result Management System (Backend)</div>
                 <div class="card-summary">A system for managing and displaying student academic results.</div>
@@ -339,7 +405,7 @@
         <div class="project-card fade-in fade-in-delay-1">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">06</span>
+              <span class="card-num">07</span>
               <div>
                 <div class="card-title">Community Service System (Backend)</div>
                 <div class="card-summary">A system where customers can request service from local providers.</div>
@@ -392,7 +458,7 @@
       <div class="project-card fade-in">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">07</span>
+              <span class="card-num">08</span>
               <div>
                 <div class="card-title">AA Suscons Ltd Website</div>
                 <div class="card-summary">I designed and developed the website for AA Suscons Limited, creating a modern, responsive, and professional online presence that showcases the firm’s architectural, interior design, and construction services.</div>
@@ -424,7 +490,7 @@
         <div class="project-card fade-in">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">08</span>
+              <span class="card-num">09</span>
               <div>
                 <div class="card-title">Arewadynamics Clothing NG Website</div>
                 <div class="card-summary">I designed and developed the website for Arewadynamics Clothing Nigeria, creating a modern, responsive, and professional online presence that showcases the brand’s fashion offerings.</div>
@@ -456,7 +522,7 @@
         <div class="project-card fade-in">
           <div class="card-header">
             <div class="card-header-left">
-              <span class="card-num">09</span>
+              <span class="card-num">10</span>
               <div>
                 <div class="card-title">Stryxx Website</div>
                 <div class="card-summary">I designed the website for Stryxx, creating a classy, responsive, and professional online presence that showcases the brand’s fashion/streetwears.</div>
